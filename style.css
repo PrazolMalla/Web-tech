@@ -1,0 +1,24 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: blue;
+    text-align: right;
+}
+
+#contain {
+    border: 1px solid #123221;
+    border-radius: 4px;
+    width: 50%;
+    background-color: green;
+}
+
+.des {
+    color: deepskyblue;
+}
+
+h1,
+.des {
+    margin-left: 15px;
+}

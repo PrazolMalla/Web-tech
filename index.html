@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="iost,csit">
+    <title>Document</title>
+</head>
+<style>
+    @media screen and (max-width:500px) {
+        body {
+            background-color: red;
+        }
+
+    }
+
+    @media screen and (min-width:600px) {
+        body {
+            background-color: blue;
+        }
+
+    }
+
+    #form1 {
+        border: 1px solid;
+        padding: 20px;
+        width: 300px;
+    }
+</style>
+
+<body>
+    <!--  -->
+    <table border="1" width="100%">
+        <tr>
+            <th>Name</td>
+            <th>Email</td>
+            <th>Phone</td>
+            <th>Address</td>
+        </tr>
+        <tr>
+            <td>John sena </td>
+            <td>someone@example.com</td>
+            <td>9779853678723</td>
+            <td>kathmandu</td>
+        </tr>
+        <tr>
+            <td colspan="2">HHH </td>
+            <td colspan="2">someone@example.com</td>
+
+        </tr>
+    </table>
+
+    <table border="3px" rules="cols">
+        <tr>
+            <th>Fruit</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>$5</td>
+        </tr>
+        <tr>
+            <td>Pear</td>
+            <td>$10.50</td>
+        </tr>
+    </table>
+
+    <table border="1px" align="center">
+        <tr>
+            <th colspan="2">Production</th>
+        </tr>
+        <tr>
+            <td>Amar</td>
+            <td>1493</td>
+        </tr>
+        <tr>
+            <td>Amar</td>
+            <td>1493</td>
+        </tr>
+        <tr>
+            <td>Amar</td>
+            <td>1493</td>
+        </tr>
+        <tr>
+            <th colspan="2">Sales</th>
+        </tr>
+        <tr>
+            <td>Santosh</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>Santosh</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>Santosh</td>
+            <td>1234</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>Saving</caption>
+        <tr>
+            <th>Month</th>
+            <th>Saving</th>
+            <th>Saving for holidays</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>&nbsp;</td>
+            <td rowspan="2">$50</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+
+    </table>
+    <table border="1">
+        <tr>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>(a+b)<Sup>2</Sup> = a<Sup>2</Sup>+ 2ab + b <sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Thank you</td>
+        </tr>
+    </table>
+    <table border="1px">
+        <tr>
+            <th>Drinks</th>
+            <th>Snacks</th>
+        </tr>
+        <tr>
+            <td>
+                <ol type="A" start="4">
+                    <li>Coke</li>
+                    <li>Sprite</li>
+                </ol>
+            </td>
+            <td>Momo</td>
+        </tr>
+        <tr>
+            <td>
+                <ul type="circle">
+                    <li>Milk</li>
+                    <li>tea</li>
+                </ul>
+            </td>
+            <td>Chowmin</td>
+        </tr>
+    </table>
+    <form id="form1">
+        <label>Username:</label>
+        <input type="text" id="username" style="margin-bottom: 20px;">
+        <label for="password">Password:</label>
+        <input type="password" id="password" style="margin-bottom: 20px;">
+        <br>
+        <input type="radio" id="gender1" name="gender1" value="male">
+        <label for="gender1">Male</label>
+        <input type="radio" id="gender2" name="gender2" value="female">
+        <label for="gender2">Female</label>
+        <br>
+        <select id="drop">
+            <option value="">Prazol</option>
+            <option value="">Prazol</option>
+            <option value="">Prazol</option>
+        </select>
+        <button onclick="dblClick()">Login</button>
+    </form>
+    <div class="array"></div>
+    <em>Prazol</em>
+    <i>Prazol</i>
+    <strong>Prazol</strong>
+    <B>Prazol</B>
+    <u>Prazol</u>
+    <mark>Prazol</mark>
+    <del>Prazol</del>
+    <ins>Prazol</ins>
+    <img src="https://images.unsplash.com/photo-1672651158855-f225fe553b0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        width="700px" height="800px" alt="photo">
+    <table border="1">
+        <caption></caption>
+        <tr>
+            <td>Column 1</td>
+            <td>Column 2</td>
+            <td>Column 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Row1 cell 1</td>
+            <td>Row1 cell2</td>
+            <td>Row1 cell3</td>
+        </tr>
+        <tr>
+            <td>Row2 cell2</td>
+            <td>Row2 cell3</td>
+        </tr>
+        <tr>
+            <td colspan="3">Row3 cell1</td>
+        </tr>
+    </table>
+    <div style="border: 1px solid;float:right;padding-right: 50px; ">
+        <h2>CSIT</h2>
+        <ol>
+            <li>PMC</li>
+            <li>HHH</li>
+        </ol>
+        <h2>BIM</h2>
+        <ul>
+            <li>DND</li>
+            <li>SSS</li>
+        </ul>
+    </div>
+    <input type="button" onclick="confirm('this is alert box');" name="btn" id="btn" value="Open alert box">
+
+
+
+    <footer style="background-color: darkgray; margin-top: 2px; text-align: center;">
+        <a href="info@iost.edu.np">Send Emails</a>
+    </footer>
+    <script>
+        const array = ['csit', 'it', 'bim', 'bhm'];
+        const date = new Date();
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        const hrs = date.getHours();
+        const min = String(date.getMinutes()).padStart(2, '0');
+        const second = String(date.getSeconds()).padStart(2, '0');
+        const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const days = daysOfWeek[date.getDay()];
+
+        const ampm = hrs >= 12 ? 'PM' : 'AM';
+        const displayHrs = hrs % 12 || 12;
+        const formattedDate = `${year}-${month}-${day} ${days} ${displayHrs}-${min}-${second} ${ampm}`;
+        const dispArea = document.getElementsByClassName('array')[0];
+        dispArea.innerHTML = formattedDate;
+        // alert("Hello World!!");
+        // prompt('Enter your Name')
+        // confirm('Enter');
+
+        const dblClick = function () {
+            alert('Hello World');
+        }
+
+        const json = '{"name":"prazol","age":23}';
+        const js = JSON.parse(json);
+        console.log(js.name);
+        console.log(js.age);
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<h3>JavaScript Object,Ternary Operator and Switch Statement</h3>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+
+<script>
+    var person = {
+        firstName: "Prazol",
+        lastName: "Malla",
+        age: 21,
+        getFullName: function () {
+            return this.firstName + ' ' + this.lastName
+        }
+    };
+
+    document.getElementById("p1").innerHTML = person.firstName;
+    document.getElementById("p2").innerHTML = person.lastName;
+    document.getElementById("p3").innerHTML = person.age;
+    document.getElementById("p4").innerHTML = person.getFullName();
+    //Ternary operator in Javascript
+    var k = parseInt(prompt("Enter the variable: "));
+    k <= 12 ? document.write("k is less than or equal to 7\n") : document.write("k is greater than 12\n");
+
+    //Switch statement in javascript
+
+    var a = parseInt(prompt("Enter your choice(1-4): "));
+    switch (a) {
+        case 1:
+            document.write("Play football");
+            break;
+        case 2:
+            document.write("Sing a song");
+            break;
+        case 3:
+            document.write("Dance");
+            break;
+        case 4:
+            document.write("Read a book");
+            break;
+        default:
+            document.write("Sleep");
+    }
+</script>

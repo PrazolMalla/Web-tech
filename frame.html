@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var gender = document.getElementsByName("gender");
+            var hobbies = document.getElementsByName("hobbies");
+            if (username == "") {
+                alert('username is required');
+                return false;
+            }
+            else if (username.length !== 5) {
+                alert('username must be 5 characters long');
+                return false;
+            }
+            else if (password == "") {
+                alert('password is required');
+                return false;
+            }
+            else if (!(gender[0].checked || gender[1].checked || gender[2].checked)) {
+                alert("Please Select Your Gender");
+                return false;
+            }
+            else if (!(hobbies[0].checked || hobbies[1].checked || hobbies[2].checked || hobbies[3].checked)) {
+                alert("Please Select Atleast one of you hobby");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Client Side Form Validation Example</h2>
+    <form method="POST" action="#">
+        <div>
+            <label> Username: </label>
+            <input type="text" name="username" id="username" required>
+        </div><br>
+        <div>
+            <label> Password: </label>
+            <input type="password" name="password" id="password" required>
+        </div><br>
+        <div>
+            <label> Gender: </label>
+            <label><input type="radio" value="m" name="gender"> Male </label>
+            <label><input type="radio" value="f" name="gender"> Female </label>
+            <label><input type="radio" value="0" name="gender"> Others </label>
+        </div><br>
+        <div>
+            <label> Hobbies: </label>
+            <label><input type="checkbox" name="hobbies"> Reading </label>
+            <label><input type="checkbox" name="hobbies"> Writing </label>
+            <label><input type="checkbox" name="hobbies"> Playing </label>
+            <label><input type="checkbox" name="hobbies"> Music </label>
+        </div><br>
+        <button onclick="validateForm()">Submit</button>
+    </form>
+</body>
+
+</html>
